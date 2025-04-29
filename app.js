@@ -19,7 +19,7 @@ const paymentRouter = require('./routes/payment');
 const storeRouter = require('./routes/store');
 
 // Kết nối MongoDB
-mongoose.connect('mongodb+srv://truongson09042003:DwNjfjs8EdHrk07H@cluster0.kv9dtx6.mongodb.net/')
+mongoose.connect('mongodb+srv://truongson09042003:DwNjfjs8EdHrk07H@cluster0.kv9dtx6.mongodb.net/my-shop?retryWrites=true&w=majority')
     .then(() => console.log('Connected to MongoDB Atlas'))
     .catch(err => console.log(err));
 
